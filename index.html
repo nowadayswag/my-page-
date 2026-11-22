@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+body {
+    background: #090909;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+    font-family: Georgia, serif;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: normal;
+}
+
+p {
+    color: #888;
+    font-family: monospace;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+    font-family: monospace;
+    font-size: 12px;
+    margin: -120px 20px 50px;
+}
+
+.menu {
+    margin-top: 20px;
+}
+
+.menu a {
+    color: #777;
+    text-decoration: none;
+    font-family: monospace;
+    margin: 0 12px;
+}
+
+.menu a:hover {
+    color: white;
+}
+img {
+    width: 180px;
+    height: 240px;
+    object-fit: cover;
+
+    padding: 8px;
+    background: #eeeeee;
+
+    border: 1px solid #444;
+
+    box-shadow: 8px 8px 0px #222;
+
+    margin-top: 20px;
+}
+.caption {
+    margin-top: 20px;
+    color: #666;
+    font-family: monospace;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #444;
+    font-size: 16px;
+    letter-spacing: 18px;
+    line-height: 70px;
+    pointer-events: none;
+    opacity: 0.35;
+    z-index: -1;
+    animation: floatStars 8s ease-in-out infinite alternate;
+}
+
+@keyframes floatStars {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-20px);
+    }
+}
+.section {
+    margin-top: 100px;
+    width: 100%;
+    max-width: 450px;
+    min-width: 0;
+    padding-top: 30px;
+    border-top: 1px solid #222;
+    box-sizing: border-box;
+}
+
+.section h2 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.section p {
+    color: #777;
+    font-family: monospace;
+    line-height: 1.8;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.photo-grid {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.photo-grid img {
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+    border: none;
+    display: block;
+    transition: 0.3s;
+}
+
+.photo-grid img:hover {
+    opacity: 0.7;
+}
+
+.homies-photos {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+    border: none;    
+    display: block;
+    transition: 0.3s;
+}
+.photo-caption {
+    margin: 8px 0 0;
+    font-size: 11px;
+    color: #888;
+}
+.about-music-layout {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+.about-music-layout {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.about-music-layout .section {
+    in-width: 0;
+    max-width: none;
+}
+#homies {
+    width: 100%;
+    max-width: 450px;
+    margin: 100px auto 0;
+    box-sizing: border-box;
+}
+#archive {
+    width: 100%;
+    max-width: 450px;
+    margin: 100px auto 0;
+    padding-top: 30px;
+    border-top: 1px solid #222;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.archive h2 {
+    margin-bottom: 10px;
+}
+
+.archive p {
+    margin-bottom: 25px;
+}
+
+.archive .journal-photos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.archive .journal-photos img {
+    width: 100%;
+    aspect-ratio: 1 / 1 ;
+    object-fit: cover;
+    display: block;    
+}
+.archive .photo-caption {
+    margin: 8px 0 0;
+    font-size: 11px;
+    color: #888;
+}
+</style>
+
+</head>
+
+<body>
+    <div class="stars">✦　·　✧　　·　✦　　⋆　·　✧</div>
+
+    <div class="top">
+        <span>09.27.26</span>
+        <span>✦</span>
+    </div>
+
+    <h1>hello, bitches.</h1>
+
+    <p>stay a while.</p>
+    <p>this is Edwardio Arlerc</p>
+    <img src="./image/martini.jpg" alt="my photo">
+    <div class="caption">
+    somewhere between here & nowhere.
+    <p>homophobic dni.</p>
+</div>
+    <div class="menu">
+    <a href="#about">about</a>
+    <a href="#music">music</a>
+    <a href="#homies">homies</a>
+    <p><a href="https://www.instagram.com/edward.rlerc?cnvx=MWVqaTF3N3R1djEybQ==">instagram</a></p>
+</div>
+<div class="photo-grid">
+
+    <img src="image/shit1.jpg" alt="photo 1">
+    <img src="image/shit2.jpg" alt="photo 2">
+    <img src="image/shit3.jpg" alt="photo 3">
+
+</div>
+
+</div>
+<div class="about-music-layout">
+<div id="about" class="section">
+
+    <h2>about me</h2>
+
+    <p>
+        just another human floating through
+        late nights, music, and random thoughts.
+    </p>
+
+    <div class="about-photos">
+        <div>
+            <img src="image/kumar1.jpg" alt="photo 1">
+            <p class="photo-caption">late nights.</p>
+        </div>
+        <div>
+            <img src="image/kumar2.jpg" alt="photo 2">
+            <p class="photo-caption">maybe u should know.</p>
+        </div>
+        <div>
+            <img src="image/kumar3.jpg" alt="photo 3">
+            <p class="photo-caption">that i love u sm, juwita.</p>
+        </div>
+
+    </div>
+
+</div>
+
+<div id="music" class="section">
+    <h2>music</h2>
+    <p>currently somewhere between silence and noise. no need to complain. sybau`</p>
+      <div class="music-photos">
+         <div>    
+            <img src="image/music1.jpg" alt="photo 1">
+            <p class="photo-caption">My Recent.</p>
+         </div>
+         <div>
+            <img src="image/music2.jpg" alt="photo 2">
+            <p class="photo-caption">Feel us More.</p>
+         </div>
+         <div>
+            <img src="image/music3.jpg" alt="photo 3">
+            <p class="photo-caption">Project.</p>
+         </div>
+
+    </div>
+</div>
+</div>
+
+<div id="homies" class="section">
+    <h2>homies</h2>
+    <p>things I never said out loud.</p>
+     <div class="homies-photos">
+
+        <img src="image/cortis1.jpg" alt="photo 1">
+        <img src="image/cortis2.jpg" alt="photo 2">
+        <img src="image/cortis3.jpg" alt="photo 3">
+        <img src="image/cortis4.jpg" alt="photo 3">
+        <img src="image/cortis5.jpg" alt="photo 3">
+        <img src="image/cortis6.jpg" alt="photo 3">
+
+
+    </div>
+</div>
+<div id="archive">
+    <h2>archive?</h2>
+    <p>little pieces of my world.</p>
+
+    <div class="journal-photos">
+        <img src="image/juwi1.jpg" alt="photo 1">
+        <img src="image/juwi2.jpg" alt="photo 2">
+          <p class="photo-caption">09.08.26.</p>
+        <img src="image/juwi3.jpg" alt="photo 3">
+        <img src="image/juwi4.jpg" alt="photo 4">
+        <p class="photo-caption">u see guys? perfect.</p>
+        <img src="image/juwi5.jpg" alt="photo 5">
+        <img src="image/juwi6.jpg" alt="photo 6">
+        <p class="photo-caption">our dump.</p>
+    </div>
+</div>
+</body>
+
+</html>
